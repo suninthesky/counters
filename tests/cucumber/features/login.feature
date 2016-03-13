@@ -1,4 +1,3 @@
-@watch
 Feature: Login
 
   As an existing user

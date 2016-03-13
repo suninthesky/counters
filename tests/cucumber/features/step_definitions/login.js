@@ -5,25 +5,11 @@
   module.exports = function() {
 
     this.Given(/^I am an existing user$/, function () {
-      // TODO: Refactor into fixture, perhaps: server.call('fixtures/user');
-      this.server.execute(function() {
-        if (Meteor.users.find().count() === 0) {
-          Accounts.createUser({
-            email: "123@123.com",
-            password: "123123"
-          });
-        }
-      });
-      browser.pause(100);
+      fixtures.user.create();
     });
 
-    // TODO: Refactor into helper
     this.Given(/^I am not already logged in$/, function () {
-      this.client.execute(function() {
-        if (Meteor.user()) {
-          Meteor.logout();
-        }
-      });
+      fixtures.user.logout();
     });
 
     this.Then(/^I click the "([^"]*)" button, I'm taken to "([^"]*)"$/, function (loginButton, loginPath) {

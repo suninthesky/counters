@@ -1,4 +1,3 @@
-@watch
 Feature: Static pages
 
   As a new user
