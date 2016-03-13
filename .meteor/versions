@@ -40,6 +40,8 @@ http@1.1.1
 id-map@1.0.4
 jquery@1.11.4
 jsx@0.2.3
+kadira:flow-router@2.10.1
+kadira:react-layout@1.5.3
 lai:collection-extensions@0.1.4
 launch-screen@1.0.4
 less@2.5.1
@@ -90,3 +92,4 @@ underscore@1.0.4
 url@1.0.5
 webapp@1.2.3
 webapp-hashing@1.0.5
+xolvio:backdoor@0.1.2
